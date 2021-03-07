@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-consumer/rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/rabbitmq-consumer/rabbitmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-producer/rabbitmq-producer.iml" filepath="$PROJECT_DIR$/rabbitmq-producer/rabbitmq-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rabbitmq-consumer/spring-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/spring-rabbitmq-consumer/spring-rabbitmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rabbitmq-producer/spring-rabbitmq-producer.iml" filepath="$PROJECT_DIR$/spring-rabbitmq-producer/spring-rabbitmq-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_rabbitmq/springboot_rabbitmq.iml" filepath="$PROJECT_DIR$/springboot_rabbitmq/springboot_rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_rabbitmq_consumer/springboot_rabbitmq_consumer.iml" filepath="$PROJECT_DIR$/springboot_rabbitmq_consumer/springboot_rabbitmq_consumer.iml" />
+    </modules>
+  </component>
+</project>
