@@ -35,7 +35,7 @@ public class Producer_Work_Queues {
          4. autoDelete:是否自动删除。当没有Consumer时，自动删除掉
          5. arguments：参数。
          */
-        //如果没有一个名字叫hello_world的队列，则会创建该队列，如果有则不会创建
+        //如果没有一个名字叫work_queues的队列，则会创建该队列，如果有则不会创建
         channel.queueDeclare("work_queues",true,false,false,null);
 
         //6.发送消息
@@ -48,11 +48,12 @@ public class Producer_Work_Queues {
             4. body：发送消息数据
          */
 
-        for (int i = 1; i <=10 ; i++) {
+       /* for (int i = 1; i <=10 ; i++) {
             String body = i+"hello rabbitmq ~~~~~";
             channel.basicPublish("","work_queues",null,body.getBytes());
-        }
-
+        }*/
+        String body = "hello rabbitmq ~~~~~";
+        channel.basicPublish("","work_queues",null,body.getBytes());
 
 
         //7.释放资源

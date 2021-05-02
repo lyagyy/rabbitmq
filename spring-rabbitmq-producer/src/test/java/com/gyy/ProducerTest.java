@@ -33,7 +33,7 @@ public class ProducerTest {
      */
     @Test
     public void testTopics(){
-        rabbitTemplate.convertAndSend("spring_topic_exchange","heima.hehe.haha","spring topics...");
+        rabbitTemplate.convertAndSend("spring_topic_exchange","heima.hehe.hah","spring topics...");
     }
 
 }

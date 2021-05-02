@@ -85,7 +85,8 @@ public class Producer_Routing {
             4. body：发送消息数据
          */
         String body = "日志信息：张三调用了delete方法...日志级别：error";
-        channel.basicPublish(exchangeName,"error",null,body.getBytes());
+        channel.basicPublish(exchangeName,"warning",null,body.getBytes());
+        channel.basicPublish(exchangeName,"info",null,body.getBytes());
         //9.释放资源
         channel.close();
         connection.close();

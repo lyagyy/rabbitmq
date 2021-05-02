@@ -7,7 +7,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class RabbitMQListener {
 
-
+    /**
+     * 监听某个队列的消息
+     * @param message 接收到的消息
+     */
     @RabbitListener(queues = "boot_queue")
     public void ListenerQueue(Message message){
         System.out.println(message);

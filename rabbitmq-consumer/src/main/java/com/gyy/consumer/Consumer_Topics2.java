@@ -42,7 +42,14 @@ public class Consumer_Topics2 {
                 System.out.println("envelope"+envelope);
                 System.out.println("envelope"+envelope.getRoutingKey());
                 System.out.println("properties"+properties);*/
-                System.out.println("body"+new String(body));
+                //路由key
+                System.out.println("路由key为：" + envelope.getRoutingKey());
+                //交换机
+                System.out.println("交换机为：" + envelope.getExchange());
+                //消息id
+                System.out.println("消息id为：" + envelope.getDeliveryTag());
+                //收到的消息
+                System.out.println("接收到的消息为：" + new String(body, "utf-8"));
                 System.out.println("将日志信息打印到控制台");
             }
         };

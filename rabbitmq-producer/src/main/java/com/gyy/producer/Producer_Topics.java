@@ -86,7 +86,7 @@ public class Producer_Topics {
             4. body：发送消息数据
          */
         String body = "日志信息：张三调用了find方法...日志级别：info";
-        channel.basicPublish(exchangeName,"good.info",null,body.getBytes());
+        channel.basicPublish(exchangeName,"good.error",null,body.getBytes());
         //9.释放资源
         channel.close();
         connection.close();
